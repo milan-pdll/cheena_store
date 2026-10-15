@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: football_store_backend
+    restart: always
+    environment:
+      ENVIRONMENT: development
+      CATALOG_STORE: local
+      CATALOG_FILE_PATH: ./data/catalog.json
+      SECRET_KEY: dev_secret_key_change_in_production_32chars
+      ADMIN_EMAIL: admin@footballstore.com
+      ADMIN_PASSWORD_HASH: $2b$12$e6xU7O2B5O7Wl2rSvyFz4eKqvM1hF4yQ0N8sE4uP4nZ5h6g7j8k9l
+      CORS_ORIGINS: http://localhost:3000,http://127.0.0.1:3000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - ./backend/data:/app/data
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: football_store_frontend
+    restart: always
+    depends_on:
+      - backend
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8000/api/v1
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next

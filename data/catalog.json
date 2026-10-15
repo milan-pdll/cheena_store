@@ -1,0 +1,716 @@
+{
+  "schema_version": "1.0.0",
+  "products": [
+    {
+      "id": "6cb2e500-bd2f-4e94-b4f5-1289ee8e0dda",
+      "name": "Nike Mercurial Superfly 10 Elite FG",
+      "slug": "nike-mercurial-superfly-10-elite-fg",
+      "description": "Engineered for explosive speed with 3/4 length Zoom Air cushioning unit and Griknit upper for surgical ball control in all weather conditions.",
+      "category_slug": "boots",
+      "brand_slug": "nike",
+      "price": 285.0,
+      "discount_price": 249.99,
+      "currency": "USD",
+      "ground_type": "FG",
+      "is_active": true,
+      "is_featured": true,
+      "display_order": 1,
+      "images": [
+        {
+          "id": "fed7ce85-352c-4d84-bfbe-0a6c8f59d26c",
+          "url": "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=1000&auto=format&fit=crop&q=80",
+          "public_id": null,
+          "position": 1,
+          "is_primary": true
+        },
+        {
+          "id": "590e87de-d65e-4517-8b9b-27322f0385f6",
+          "url": "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=1000&auto=format&fit=crop&q=80",
+          "public_id": null,
+          "position": 2,
+          "is_primary": false
+        }
+      ],
+      "variants": [
+        {
+          "id": "d0df90e3-4022-4589-afa0-c09298fcb9e8",
+          "size": "UK 7.5",
+          "color": "Glacier Blue / Metallic Gold",
+          "stock_quantity": 4,
+          "sku": "NKE-MS10-75"
+        },
+        {
+          "id": "11490067-8416-4a9a-80aa-94b4d91bfc13",
+          "size": "UK 8.0",
+          "color": "Glacier Blue / Metallic Gold",
+          "stock_quantity": 6,
+          "sku": "NKE-MS10-80"
+        },
+        {
+          "id": "78e0310c-2f75-40e5-a8e7-a75d9c65aff9",
+          "size": "UK 8.5",
+          "color": "Glacier Blue / Metallic Gold",
+          "stock_quantity": 5,
+          "sku": "NKE-MS10-85"
+        },
+        {
+          "id": "c83ed728-7084-4e34-919f-d66986ef6f99",
+          "size": "UK 9.0",
+          "color": "Glacier Blue / Metallic Gold",
+          "stock_quantity": 3,
+          "sku": "NKE-MS10-90"
+        },
+        {
+          "id": "1665c7fe-0f9e-48db-9037-981b009363b3",
+          "size": "UK 9.5",
+          "color": "Glacier Blue / Metallic Gold",
+          "stock_quantity": 0,
+          "sku": "NKE-MS10-95"
+        },
+        {
+          "id": "220a8155-2952-439f-8e22-023db88892f9",
+          "size": "UK 10.0",
+          "color": "Glacier Blue / Metallic Gold",
+          "stock_quantity": 2,
+          "sku": "NKE-MS10-100"
+        }
+      ],
+      "created_at": "2026-10-15T11:11:06.417014+00:00",
+      "updated_at": "2026-10-15T11:11:06.417014+00:00",
+      "deleted_at": null
+    },
+    {
+      "id": "7ca86138-5849-4619-a825-2a3b65d7d9e8",
+      "name": "Adidas Predator Elite FT AG",
+      "slug": "adidas-predator-elite-ft-ag",
+      "description": "The return of the iconic fold-over tongue with modern Strikeskin rubber fins crafted specifically for 3G/4G artificial grass dominance.",
+      "category_slug": "boots",
+      "brand_slug": "adidas",
+      "price": 279.99,
+      "discount_price": null,
+      "currency": "USD",
+      "ground_type": "AG",
+      "is_active": true,
+      "is_featured": true,
+      "display_order": 2,
+      "images": [
+        {
+          "id": "644935f6-fa60-43e4-9ee4-77ebe9cd30c1",
+          "url": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=1000&auto=format&fit=crop&q=80",
+          "public_id": null,
+          "position": 1,
+          "is_primary": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "f9c08f64-8f5f-4ca3-863c-153228d739c2",
+          "size": "UK 8.0",
+          "color": "Core Black / Solar Red",
+          "stock_quantity": 5,
+          "sku": "ADI-PRED-80"
+        },
+        {
+          "id": "4d612c0a-7f47-4ee0-bfba-d60341ecba11",
+          "size": "UK 8.5",
+          "color": "Core Black / Solar Red",
+          "stock_quantity": 4,
+          "sku": "ADI-PRED-85"
+        },
+        {
+          "id": "76f10bd5-25cf-48f1-bae6-6c9949e71080",
+          "size": "UK 9.0",
+          "color": "Core Black / Solar Red",
+          "stock_quantity": 7,
+          "sku": "ADI-PRED-90"
+        },
+        {
+          "id": "5c0fc391-f57a-40fb-abc5-303e10a3a991",
+          "size": "UK 9.5",
+          "color": "Core Black / Solar Red",
+          "stock_quantity": 2,
+          "sku": "ADI-PRED-95"
+        },
+        {
+          "id": "57baabec-7a15-41c3-865a-c6ae7fd922fb",
+          "size": "UK 10.5",
+          "color": "Core Black / Solar Red",
+          "stock_quantity": 1,
+          "sku": "ADI-PRED-105"
+        }
+      ],
+      "created_at": "2026-10-15T11:11:06.417014+00:00",
+      "updated_at": "2026-10-15T11:11:06.417014+00:00",
+      "deleted_at": null
+    },
+    {
+      "id": "62fd5b45-8053-4bd1-b699-ce3cda558575",
+      "name": "Puma Future 7 Ultimate FG/AG",
+      "slug": "puma-future-7-ultimate-fg-ag",
+      "description": "FUZIONFIT360 dual mesh upper with PWRTAPE support locks your foot down for adaptive fit with or without laces.",
+      "category_slug": "boots",
+      "brand_slug": "puma",
+      "price": 229.0,
+      "discount_price": 189.99,
+      "currency": "USD",
+      "ground_type": "FG",
+      "is_active": true,
+      "is_featured": false,
+      "display_order": 3,
+      "images": [
+        {
+          "id": "b95eb2b1-639c-40ca-bcba-2904fb747b20",
+          "url": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=1000&auto=format&fit=crop&q=80",
+          "public_id": null,
+          "position": 1,
+          "is_primary": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "42f3756a-5b68-4f1f-9e21-f3c465935c88",
+          "size": "UK 7.5",
+          "color": "Poison Pink / White",
+          "stock_quantity": 3,
+          "sku": "PUM-FUT-75"
+        },
+        {
+          "id": "794b62b3-020b-47c4-a22a-035527fa3521",
+          "size": "UK 8.5",
+          "color": "Poison Pink / White",
+          "stock_quantity": 4,
+          "sku": "PUM-FUT-85"
+        },
+        {
+          "id": "2ed966fe-f88b-4247-91ad-7ff468ffe211",
+          "size": "UK 9.5",
+          "color": "Poison Pink / White",
+          "stock_quantity": 0,
+          "sku": "PUM-FUT-95"
+        }
+      ],
+      "created_at": "2026-10-15T11:11:06.417014+00:00",
+      "updated_at": "2026-10-15T11:11:06.417014+00:00",
+      "deleted_at": null
+    },
+    {
+      "id": "898e95be-dac0-4bab-8465-40939f6312e6",
+      "name": "Mizuno Morelia Neo IV Beta Made In Japan FG",
+      "slug": "mizuno-morelia-neo-iv-beta-japan-fg",
+      "description": "Handcrafted in Japan with the finest Scotchguard K-Leather. Ultra-lightweight bare-foot touch re-engineered for the modern playmaker.",
+      "category_slug": "boots",
+      "brand_slug": "mizuno",
+      "price": 320.0,
+      "discount_price": null,
+      "currency": "USD",
+      "ground_type": "FG",
+      "is_active": true,
+      "is_featured": true,
+      "display_order": 4,
+      "images": [
+        {
+          "id": "edfdbe8f-f29f-44c5-854d-f0f1f91e4e9b",
+          "url": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=1000&auto=format&fit=crop&q=80",
+          "public_id": null,
+          "position": 1,
+          "is_primary": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "a00b856e-ba61-4c47-8a08-72e50cdf7db4",
+          "size": "UK 8.0",
+          "color": "Pearl White / Black / Gold",
+          "stock_quantity": 2,
+          "sku": "MIZ-MOR-80"
+        },
+        {
+          "id": "11e3cb25-2339-4056-a4db-890d664cb0f8",
+          "size": "UK 8.5",
+          "color": "Pearl White / Black / Gold",
+          "stock_quantity": 3,
+          "sku": "MIZ-MOR-85"
+        },
+        {
+          "id": "571023cc-3ea4-43ed-bfec-6e1e6668171d",
+          "size": "UK 9.0",
+          "color": "Pearl White / Black / Gold",
+          "stock_quantity": 1,
+          "sku": "MIZ-MOR-90"
+        }
+      ],
+      "created_at": "2026-10-15T11:11:06.417014+00:00",
+      "updated_at": "2026-10-15T11:11:06.417014+00:00",
+      "deleted_at": null
+    },
+    {
+      "id": "4cf73781-6924-4e40-a056-fc27a58a1487",
+      "name": "Nike Phantom GX II Elite SG-Pro Anti-Clog",
+      "slug": "nike-phantom-gx-ii-elite-sg-pro",
+      "description": "Anti-Clog Traction technology on the soleplate sheds mud to ensure maximum grip on waterlogged, muddy pitches.",
+      "category_slug": "boots",
+      "brand_slug": "nike",
+      "price": 295.0,
+      "discount_price": 259.0,
+      "currency": "USD",
+      "ground_type": "SG",
+      "is_active": true,
+      "is_featured": false,
+      "display_order": 5,
+      "images": [
+        {
+          "id": "634e21eb-8cd5-4563-b64e-a63d8de9af43",
+          "url": "https://images.unsplash.com/photo-1518002171953-a080ee817e1f?w=1000&auto=format&fit=crop&q=80",
+          "public_id": null,
+          "position": 1,
+          "is_primary": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "afb5de6e-731b-4b3a-9d5a-aea00f64a0e8",
+          "size": "UK 8.5",
+          "color": "Metallic Gold / Black",
+          "stock_quantity": 4,
+          "sku": "NKE-PGX-85"
+        },
+        {
+          "id": "34122a31-bdc3-4cae-9b06-aa7cdf82d5b4",
+          "size": "UK 9.0",
+          "color": "Metallic Gold / Black",
+          "stock_quantity": 2,
+          "sku": "NKE-PGX-90"
+        },
+        {
+          "id": "60de3004-e78a-4aae-b0ab-3103d9bb0624",
+          "size": "UK 10.0",
+          "color": "Metallic Gold / Black",
+          "stock_quantity": 3,
+          "sku": "NKE-PGX-100"
+        }
+      ],
+      "created_at": "2026-10-15T11:11:06.417014+00:00",
+      "updated_at": "2026-10-15T11:11:06.417014+00:00",
+      "deleted_at": null
+    },
+    {
+      "id": "2689e118-5ded-406e-a1e4-d1eb0243b72d",
+      "name": "Adidas Copa Pure 2 Pro TF Turf",
+      "slug": "adidas-copa-pure-2-pro-tf",
+      "description": "Supple Fusionskin cow leather forefoot with Lightstrike midsole cushioning for premium response on artificial turf pitches.",
+      "category_slug": "boots",
+      "brand_slug": "adidas",
+      "price": 140.0,
+      "discount_price": 119.99,
+      "currency": "USD",
+      "ground_type": "TF",
+      "is_active": true,
+      "is_featured": false,
+      "display_order": 6,
+      "images": [
+        {
+          "id": "6f879773-a8b0-469b-a7c0-f2bce9f2c99f",
+          "url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&auto=format&fit=crop&q=80",
+          "public_id": null,
+          "position": 1,
+          "is_primary": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "16aed3a1-1c31-4f08-b2c9-ef79b2ffdc05",
+          "size": "UK 7.5",
+          "color": "Cloud White / Core Black",
+          "stock_quantity": 6,
+          "sku": "ADI-COP-75"
+        },
+        {
+          "id": "9313e274-53d2-451e-bb77-45ccde857882",
+          "size": "UK 8.5",
+          "color": "Cloud White / Core Black",
+          "stock_quantity": 8,
+          "sku": "ADI-COP-85"
+        },
+        {
+          "id": "f3cc3b64-4dfe-4401-8457-fb773fb5443f",
+          "size": "UK 9.5",
+          "color": "Cloud White / Core Black",
+          "stock_quantity": 4,
+          "sku": "ADI-COP-95"
+        }
+      ],
+      "created_at": "2026-10-15T11:11:06.417014+00:00",
+      "updated_at": "2026-10-15T11:11:06.417014+00:00",
+      "deleted_at": null
+    },
+    {
+      "id": "fd2e12f7-5e27-44f4-89a6-227717ddb1ee",
+      "name": "Real Madrid 2024/25 Authentic Home Jersey",
+      "slug": "real-madrid-2024-25-authentic-home-jersey",
+      "description": "The official player-version home jersey with woven houndstooth pattern and metallic gold accents. Features HEAT.RDY air-cooling fabric.",
+      "category_slug": "jerseys",
+      "brand_slug": "adidas",
+      "price": 150.0,
+      "discount_price": 135.0,
+      "currency": "USD",
+      "ground_type": null,
+      "is_active": true,
+      "is_featured": true,
+      "display_order": 7,
+      "images": [
+        {
+          "id": "0f22913d-02dd-41b1-81f7-f5c29b209c6c",
+          "url": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=1000&auto=format&fit=crop&q=80",
+          "public_id": null,
+          "position": 1,
+          "is_primary": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "e0966fda-c6c7-451b-9c6a-8eea70c580f9",
+          "size": "S",
+          "color": "White / Gold",
+          "stock_quantity": 5,
+          "sku": "RM-HM24-S"
+        },
+        {
+          "id": "abf1aa8d-313b-47f1-b12c-4fc5599cbfe9",
+          "size": "M",
+          "color": "White / Gold",
+          "stock_quantity": 8,
+          "sku": "RM-HM24-M"
+        },
+        {
+          "id": "fdbc64cf-dd61-453c-a17b-5bf3a148989e",
+          "size": "L",
+          "color": "White / Gold",
+          "stock_quantity": 7,
+          "sku": "RM-HM24-L"
+        },
+        {
+          "id": "a30ab131-129e-4b57-a76c-87b359a78e0a",
+          "size": "XL",
+          "color": "White / Gold",
+          "stock_quantity": 4,
+          "sku": "RM-HM24-XL"
+        },
+        {
+          "id": "f4813af0-f6c8-4c6a-b7eb-775dd3933d0f",
+          "size": "XXL",
+          "color": "White / Gold",
+          "stock_quantity": 2,
+          "sku": "RM-HM24-XXL"
+        }
+      ],
+      "created_at": "2026-10-15T11:11:06.417014+00:00",
+      "updated_at": "2026-10-15T11:11:06.417014+00:00",
+      "deleted_at": null
+    },
+    {
+      "id": "272dbc3e-49ba-4687-b045-e7f124aca783",
+      "name": "Arsenal 2024/25 Authentic Away Player Jersey",
+      "slug": "arsenal-2024-25-authentic-away-jersey",
+      "description": "Celebrating North London's diaspora connection with Pan-African color flourishes and heat-applied lightweight Cannon crest.",
+      "category_slug": "jerseys",
+      "brand_slug": "adidas",
+      "price": 145.0,
+      "discount_price": null,
+      "currency": "USD",
+      "ground_type": null,
+      "is_active": true,
+      "is_featured": true,
+      "display_order": 8,
+      "images": [
+        {
+          "id": "68addf4e-3b98-4179-b47e-8b0db60a4f93",
+          "url": "https://images.unsplash.com/photo-1516478177764-9fe5bd7e9717?w=1000&auto=format&fit=crop&q=80",
+          "public_id": null,
+          "position": 1,
+          "is_primary": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "a36b9df7-b261-40ec-beb1-3704175eded3",
+          "size": "M",
+          "color": "Black / Red / Green",
+          "stock_quantity": 6,
+          "sku": "ARS-AW24-M"
+        },
+        {
+          "id": "4a6fadd3-5606-4550-9971-8a3d75b6efc6",
+          "size": "L",
+          "color": "Black / Red / Green",
+          "stock_quantity": 5,
+          "sku": "ARS-AW24-L"
+        },
+        {
+          "id": "49070cac-0b24-4668-8752-d6a83d30f22a",
+          "size": "XL",
+          "color": "Black / Red / Green",
+          "stock_quantity": 3,
+          "sku": "ARS-AW24-XL"
+        }
+      ],
+      "created_at": "2026-10-15T11:11:06.417014+00:00",
+      "updated_at": "2026-10-15T11:11:06.417014+00:00",
+      "deleted_at": null
+    },
+    {
+      "id": "4da48cc7-0ada-4bb4-8949-ecca3a5d4705",
+      "name": "France National Team 2024 Match Home Kit",
+      "slug": "france-2024-match-home-kit",
+      "description": "Vintage oversized cockerel crest on bright royal blue Dri-FIT ADV fabric as worn in European Championship matches.",
+      "category_slug": "jerseys",
+      "brand_slug": "nike",
+      "price": 140.0,
+      "discount_price": 120.0,
+      "currency": "USD",
+      "ground_type": null,
+      "is_active": true,
+      "is_featured": false,
+      "display_order": 9,
+      "images": [
+        {
+          "id": "b865b818-b7f6-4709-901c-1b9a61f5bd51",
+          "url": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1000&auto=format&fit=crop&q=80",
+          "public_id": null,
+          "position": 1,
+          "is_primary": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "4f5b0d93-c2ba-4a40-b622-c8052dbb3b1c",
+          "size": "S",
+          "color": "Bright Blue",
+          "stock_quantity": 3,
+          "sku": "FRA-HM24-S"
+        },
+        {
+          "id": "8643fa04-2c62-41ec-9146-3d8a3ab7f14f",
+          "size": "M",
+          "color": "Bright Blue",
+          "stock_quantity": 6,
+          "sku": "FRA-HM24-M"
+        },
+        {
+          "id": "e7ad6bd7-61eb-4d32-a4a8-da8b3f90f694",
+          "size": "L",
+          "color": "Bright Blue",
+          "stock_quantity": 4,
+          "sku": "FRA-HM24-L"
+        },
+        {
+          "id": "e4fc09fc-bd13-40e5-b9f4-e2bd9d3a3be3",
+          "size": "XL",
+          "color": "Bright Blue",
+          "stock_quantity": 1,
+          "sku": "FRA-HM24-XL"
+        }
+      ],
+      "created_at": "2026-10-15T11:11:06.417014+00:00",
+      "updated_at": "2026-10-15T11:11:06.417014+00:00",
+      "deleted_at": null
+    },
+    {
+      "id": "fd1dcd32-40da-4e6e-8666-0024a29b4ab5",
+      "name": "Manchester City 2024/25 Definitely City 4th Kit",
+      "slug": "manchester-city-2024-25-definitely-city-4th-kit",
+      "description": "Co-designed by Noel Gallagher celebrating 30 years of 'Definitely Maybe'. Premium muted tones and signature inner collar detailing.",
+      "category_slug": "jerseys",
+      "brand_slug": "puma",
+      "price": 135.0,
+      "discount_price": null,
+      "currency": "USD",
+      "ground_type": null,
+      "is_active": true,
+      "is_featured": true,
+      "display_order": 10,
+      "images": [
+        {
+          "id": "c42efd8c-a449-4ce7-9f3a-b6281dfd2fcc",
+          "url": "https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=1000&auto=format&fit=crop&q=80",
+          "public_id": null,
+          "position": 1,
+          "is_primary": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "fe2249b6-4eae-43e8-9ded-7a2d9fe9573e",
+          "size": "M",
+          "color": "Retro Cream / Poppy Pink",
+          "stock_quantity": 7,
+          "sku": "MCI-DM24-M"
+        },
+        {
+          "id": "11209b94-432b-469f-9fcc-d2fdfc940c71",
+          "size": "L",
+          "color": "Retro Cream / Poppy Pink",
+          "stock_quantity": 5,
+          "sku": "MCI-DM24-L"
+        },
+        {
+          "id": "ee165d91-5746-44c2-9fe2-e9986f2f60be",
+          "size": "XL",
+          "color": "Retro Cream / Poppy Pink",
+          "stock_quantity": 2,
+          "sku": "MCI-DM24-XL"
+        }
+      ],
+      "created_at": "2026-10-15T11:11:06.417014+00:00",
+      "updated_at": "2026-10-15T11:11:06.417014+00:00",
+      "deleted_at": null
+    },
+    {
+      "id": "46eec1a9-779d-4ad1-a94d-6b9ade59b7f7",
+      "name": "Apex Grip Pro Performance Socks (3-Pack)",
+      "slug": "apex-grip-pro-performance-socks-3-pack",
+      "description": "Anti-slip rubber suction pads eliminate in-boot slippage, blister formation, and micro-movements during rapid direction changes.",
+      "category_slug": "accessories",
+      "brand_slug": "nike",
+      "price": 45.0,
+      "discount_price": 38.0,
+      "currency": "USD",
+      "ground_type": null,
+      "is_active": true,
+      "is_featured": false,
+      "display_order": 11,
+      "images": [
+        {
+          "id": "1385f0ef-012a-4b6a-aacf-b04bb4ad90eb",
+          "url": "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?w=1000&auto=format&fit=crop&q=80",
+          "public_id": null,
+          "position": 1,
+          "is_primary": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "27e466cf-6aca-49df-b720-f0e8536cd0ac",
+          "size": "One Size (UK 7-11)",
+          "color": "White / Black / Gold",
+          "stock_quantity": 25,
+          "sku": "APX-GRP-3PK"
+        }
+      ],
+      "created_at": "2026-10-15T11:11:06.417014+00:00",
+      "updated_at": "2026-10-15T11:11:06.417014+00:00",
+      "deleted_at": null
+    },
+    {
+      "id": "a8284caf-d27b-4b0b-acf3-8a0568d68878",
+      "name": "Predator Pro Negative Cut Goalkeeper Gloves",
+      "slug": "predator-pro-negative-cut-goalkeeper-gloves",
+      "description": "URG 2.0 latex palm combines match-level stickiness and high abrasion resistance with High Definition Grip silicone backhand elements.",
+      "category_slug": "accessories",
+      "brand_slug": "adidas",
+      "price": 120.0,
+      "discount_price": 99.0,
+      "currency": "USD",
+      "ground_type": null,
+      "is_active": true,
+      "is_featured": false,
+      "display_order": 12,
+      "images": [
+        {
+          "id": "6104b630-f557-4de3-91a6-d347af8b01cc",
+          "url": "https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?w=1000&auto=format&fit=crop&q=80",
+          "public_id": null,
+          "position": 1,
+          "is_primary": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "6d0d7472-c6e1-4ef3-adeb-9c38ef94b9df",
+          "size": "Size 8.5",
+          "color": "Lucid Lemon / Black",
+          "stock_quantity": 3,
+          "sku": "ADI-GLV-85"
+        },
+        {
+          "id": "3db33442-e364-4b58-a660-393eb631e4f6",
+          "size": "Size 9.0",
+          "color": "Lucid Lemon / Black",
+          "stock_quantity": 4,
+          "sku": "ADI-GLV-90"
+        },
+        {
+          "id": "f48a5ccd-d70e-4c09-b74e-0e24cae7a7c4",
+          "size": "Size 10.0",
+          "color": "Lucid Lemon / Black",
+          "stock_quantity": 2,
+          "sku": "ADI-GLV-100"
+        }
+      ],
+      "created_at": "2026-10-15T11:11:06.417014+00:00",
+      "updated_at": "2026-10-15T11:11:06.417014+00:00",
+      "deleted_at": null
+    }
+  ],
+  "categories": [
+    {
+      "slug": "boots",
+      "name": "Football Boots",
+      "description": "Match-grade football boots across Firm Ground, Artificial Grass, and Turf configurations.",
+      "is_active": true,
+      "display_order": 1
+    },
+    {
+      "slug": "jerseys",
+      "name": "Official Jerseys",
+      "description": "Authentic matchday and player-issue club and national team football shirts.",
+      "is_active": true,
+      "display_order": 2
+    },
+    {
+      "slug": "accessories",
+      "name": "Accessories & Gear",
+      "description": "Elite grip socks, shinguards, and goalkeeper gloves.",
+      "is_active": true,
+      "display_order": 3
+    }
+  ],
+  "brands": [
+    {
+      "slug": "nike",
+      "name": "Nike",
+      "logo_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200&auto=format&fit=crop&q=80",
+      "is_active": true
+    },
+    {
+      "slug": "adidas",
+      "name": "Adidas",
+      "logo_url": "https://images.unsplash.com/photo-1518002171953-a080ee817e1f?w=200&auto=format&fit=crop&q=80",
+      "is_active": true
+    },
+    {
+      "slug": "puma",
+      "name": "Puma",
+      "logo_url": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=200&auto=format&fit=crop&q=80",
+      "is_active": true
+    },
+    {
+      "slug": "mizuno",
+      "name": "Mizuno",
+      "logo_url": "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=200&auto=format&fit=crop&q=80",
+      "is_active": true
+    }
+  ],
+  "site_settings": {
+    "store_name": "APEX PITCH | Football Boots & Jerseys",
+    "whatsapp_number": "447123456789",
+    "instagram_url": "https://instagram.com/apexpitch_official",
+    "facebook_url": "https://facebook.com/apexpitch",
+    "tiktok_url": "https://tiktok.com/@apexpitch",
+    "email": "orders@apexpitch.com",
+    "address": "Stamford Bridge Quarter, Fulham Rd, London, UK",
+    "hero_title": "Precision Boots. Legendary Jerseys.",
+    "hero_subtitle": "Handpicked professional-grade boots & match-edition jerseys. Instant WhatsApp consultation and direct ordering.",
+    "hero_image_url": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=1600&auto=format&fit=crop&q=80",
+    "announcement_text": "⚡ Free express dispatch on all orders over $150. Chat on WhatsApp for custom size advice."
+  }
+}
