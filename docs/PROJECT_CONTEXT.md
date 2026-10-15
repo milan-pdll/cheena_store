@@ -89,8 +89,8 @@ A production-ready e-commerce catalogue for football boots and jerseys. Customer
 - `site_settings`: `store_name`, `whatsapp_number`, `instagram_url`, `facebook_url`, `tiktok_url`, `email`, `address`, `hero_title`, `hero_subtitle`, `hero_image_url`, `announcement_text`
 
 ## 8. Current Status
-- **Phase 1 Completed:** Database removed. Atomic `CatalogStore` (Local + Cloudinary raw) implemented, in-memory cache, Pydantic v2 domain schemas, repositories, services, public API endpoints, seed script with 12 items, and 16 passing unit/integration tests.
-- **Phase 2 Ready:** Admin auth, CRUD endpoints, variant stock patch, backup import/export, and Cloudinary media upload abstraction.
+- **Phase 1 & 2 Completed:** Database-free `CatalogStore` (Local + Cloudinary raw), Pydantic v2 domain schemas, repositories, services, public storefront API, admin JWT auth with rate limiting, product/variant CRUD with cloning and bulk actions, stock update endpoints, Cloudinary media signature provider, taxonomy manager, backup export/restore, and 24 passing tests.
+- **Phase 3 Ready:** Public Frontend (design system tokens, home page, catalogue with filters, product detail gallery, and dynamic WhatsApp order CTA).
 
 ## 9. Known Issues & Watchouts
 - Ensure atomic writes on `LocalJsonCatalogStore` (write to `.tmp` file, then `os.replace`).

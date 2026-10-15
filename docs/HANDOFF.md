@@ -1,21 +1,29 @@
 # SESSION HANDOFF
 
 ## 1. What was done
-- **Architectural Pivot Recorded:** Logged transition to Database-Free architecture in `docs/DECISIONS.md`. Removed PostgreSQL, SQLite, SQLAlchemy, Alembic, migrations, and `database.py`.
-- **Pydantic v2 Domain Schemas:** Implemented complete typing in `backend/app/schemas/catalog.py` (`Product`, `ProductVariant`, `ProductImage`, `Category`, `Brand`, `SiteSettings`, `CatalogDocument`) and `backend/app/schemas/product_query.py` (`ProductFilterParams`, `PaginatedProductsResponse`).
-- **`CatalogStore` Interface & Implementations:** Created `CatalogStore` (abstract base), `LocalJsonCatalogStore` (atomic `.tmp` writes, `os.replace`, rotation of last 10 timestamped backups), `CloudinaryRawCatalogStore` (for raw JSON cloud persistence on ephemeral hosts), and `CachedCatalogStore` (thread/task safe in-memory cache with write-invalidation via `asyncio.Lock`).
-- **Repositories & Services Layer:** Implemented `ProductRepository`, `CategoryRepository`, `BrandRepository`, and `SettingsRepository`, along with `ProductService`, `StockService`, `SettingsService`, and `TaxonomyService`.
-- **Public REST API:** Built and mounted `/api/v1/products` (multi-field filtering by category, brand, size, ground_type, min/max price, in_stock, featured, search `q`, and sorting), `/api/v1/products/{slug}`, `/api/v1/categories`, `/api/v1/brands`, and `/api/v1/settings/public`.
-- **Realistic Seeding:** Built `backend/scripts/seed_catalog.py` generating 12 sample products across boots (Nike Superfly FG, Predator Elite AG, Puma Future, Mizuno Morelia Japan, Phantom SG-Pro Anti-Clog, Copa Pure TF) and jerseys (Real Madrid, Arsenal, France, Man City) into `data/catalog.json`.
-- **Automated Testing:** Pytest suite with 16 tests covering health check, repository filters/sorting/soft-delete, services, and public API endpoints, all passing with in-memory store fixtures.
-- **Documentation Updated:** `PROJECT_CONTEXT.md` (<100 lines), `TASKS.md`, `DECISIONS.md`, `CHANGELOG.md`, `HANDOFF.md`.
+- **Git Repository & Remote Setup**: Initialized Git at `e:/cheena/website`, configured origin remote to `https://github.com/milan-pdll/cheena_store.git`, and successfully pushed to branch `main`.
+- **Admin Authentication & Rate Limiting**: Built `/api/v1/admin/login` (sliding window rate-limited to 5 attempts/minute), `/api/v1/admin/refresh`, `/api/v1/admin/me` with JWT access and refresh token lifecycle, and bcrypt password verification.
+- **Image Storage Abstraction & Cloudinary Adapter**: Built `ImageStorage` interface in `app/integrations/image_storage.py` and Cloudinary implementation with direct-upload API signature generation and remote media deletion.
+- **Product Management CRUD**: Built full admin product endpoints (`GET`, `POST`, `PUT/PATCH`, `DELETE` soft-delete, `/duplicate`, `/bulk` for batch delete/activate/deactivate/price adjustment, `/reorder` for featured ordering, and `/{id}/images/reorder` for image gallery positioning and primary thumbnail designation).
+- **Stock Management**: Built `/admin/stock/{product_id}/{variant_id}` for inline variant stock count updates, `/admin/stock/bulk` for multi-variant adjustments, and `/admin/stock/alerts` for low-stock and out-of-stock monitoring.
+- **Taxonomy & Settings Management**: Built admin CRUD for categories and brands, and `/admin/settings` update endpoint.
+- **Catalog Backup & Restore**: Built `/admin/catalog/export` (JSON snapshot download) and `/admin/catalog/import` (validated backup restoration).
+- **Automated Tests**: 24 tests passing across health, public store, admin auth, admin products, admin stock, and backup import/export.
+- **Context Docs Maintained**: `PROJECT_CONTEXT.md` (99 lines), `TASKS.md`, `DECISIONS.md`, `CHANGELOG.md`, `HANDOFF.md`.
 
 ## 2. What is half-finished
-- None. Phase 1 is 100% complete.
+- None. Phase 2 is 100% complete and tested.
 
 ## 3. Exact next step
-- **Phase 2**: Admin authentication (`/admin/login`, `/admin/refresh` using `ADMIN_EMAIL` and `ADMIN_PASSWORD_HASH`), admin CRUD endpoints (create product, update product, soft delete, duplicate, bulk actions), stock variant patch, backup export/import endpoints, and `ImageStorage` abstraction + Cloudinary direct upload signature provider.
+- **Phase 3**: Public Frontend implementation in Next.js (App Router):
+  1. Royal gold design system tokens and theme shell
+  2. Public header with navigation and announcement bar
+  3. Floating WhatsApp order widget with direct conversational messaging
+  4. Homepage with hero banner, category tiles, featured products, brand strip, trust section
+  5. Catalogue page with filters (brand, size, ground type, price range, in-stock), sorting, search, pagination, and skeleton loaders
+  6. Product detail page with image gallery (zoom and swipe), variant selector, real-time stock indicator, and dynamic WhatsApp order CTA
+  7. About, Contact, and Shipping/FAQ pages.
 
 ## 4. Gotchas & Notes
-- Seed script runs via `python backend/scripts/seed_catalog.py` and creates `data/catalog.json`.
-- When testing, in-memory store dependency override ensures test runs never alter `./data/catalog.json`.
+- Admin login uses `ADMIN_EMAIL` and `ADMIN_PASSWORD_HASH`. Default credentials out of the box: `admin@footballstore.com` / `AdminSecurePassword123!`.
+- Login endpoint enforces a 5 attempts/minute rate limit per IP.

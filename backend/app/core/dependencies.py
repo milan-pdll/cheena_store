@@ -3,6 +3,7 @@
 from fastapi import Depends
 
 from app.integrations.catalog_store import CatalogStore, get_catalog_store
+from app.integrations.image_storage import CloudinaryImageStorage, ImageStorage
 from app.repositories.brand_repository import BrandRepository
 from app.repositories.category_repository import CategoryRepository
 from app.repositories.product_repository import ProductRepository
@@ -16,6 +17,11 @@ from app.services.taxonomy_service import TaxonomyService
 def get_store() -> CatalogStore:
     """Provide the singleton CatalogStore instance."""
     return get_catalog_store()
+
+
+def get_image_storage() -> ImageStorage:
+    """Provide configured ImageStorage provider instance."""
+    return CloudinaryImageStorage()
 
 
 def get_product_repository(

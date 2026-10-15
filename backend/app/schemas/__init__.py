@@ -1,5 +1,22 @@
 """Pydantic schemas package exports."""
 
+from app.schemas.admin import (
+    AdminLoginRequest,
+    BrandUpsertRequest,
+    BulkActionType,
+    BulkProductActionRequest,
+    BulkStockItemUpdate,
+    BulkStockUpdateRequest,
+    CategoryUpsertRequest,
+    FeaturedReorderRequest,
+    ImageReorderRequest,
+    ProductCreateRequest,
+    ProductDuplicateRequest,
+    ProductUpdateRequest,
+    RefreshTokenRequest,
+    TokenResponse,
+    VariantStockUpdateRequest,
+)
 from app.schemas.catalog import (
     Brand,
     CatalogDocument,
@@ -25,4 +42,19 @@ __all__ = [
     "SiteSettings",
     "ProductFilterParams",
     "PaginatedProductsResponse",
+    "AdminLoginRequest",
+    "TokenResponse",
+    "RefreshTokenRequest",
+    "ProductCreateRequest",
+    "ProductUpdateRequest",
+    "ProductDuplicateRequest",
+    "BulkActionType",
+    "BulkProductActionRequest",
+    "VariantStockUpdateRequest",
+    "BulkStockItemUpdate",
+    "BulkStockUpdateRequest",
+    "FeaturedReorderRequest",
+    "ImageReorderRequest",
+    "CategoryUpsertRequest",
+    "BrandUpsertRequest",
 ]

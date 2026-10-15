@@ -40,8 +40,23 @@ def in_memory_store(sample_catalog_document: CatalogDocument) -> InMemoryCatalog
 @pytest_asyncio.fixture
 async def client(in_memory_store: InMemoryCatalogStore) -> AsyncGenerator[AsyncClient, None]:
     """Fixture providing an AsyncClient with overridden catalog store."""
+    from app.core.security import _login_attempts
+    _login_attempts.clear()
+
     app.dependency_overrides[get_store] = lambda: in_memory_store
     transport = ASGITransport(app=app)
     async with AsyncClient(transport=transport, base_url="http://test") as ac:
         yield ac
     app.dependency_overrides.clear()
+
+
+@pytest.fixture
+def admin_headers() -> dict:
+    """Fixture providing valid authorization header directly."""
+    from app.core.config import get_settings
+    from app.core.security import create_access_token
+
+    settings = get_settings()
+    token = create_access_token({"sub": settings.ADMIN_EMAIL})
+    return {"Authorization": f"Bearer {token}"}
+

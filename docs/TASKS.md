@@ -1,6 +1,6 @@
 # PROJECT TASKS TRACKER
 
-**Next task:** Phase 2: Admin authentication, product and variant CRUD, stock management, backup import/export, and image storage abstraction.
+**Next task:** Phase 3: Public Frontend (royal gold design system, home hero, catalogue with filters, product detail gallery, and dynamic WhatsApp order CTA).
 
 ---
 
@@ -25,13 +25,14 @@
 - [x] Pytest test suite for repositories, services, and public endpoints (16 tests passing)
 
 ## Phase 2: Admin Auth, CRUD APIs & Media Storage Abstraction
-- [ ] Admin authentication (JWT access + refresh tokens, bcrypt hashing, rate limiting)
-- [ ] Abstract `ImageStorage` interface + Cloudinary implementation
-- [ ] Product and Variant CRUD endpoints (with soft-delete)
-- [ ] Batch & inline stock update endpoints
-- [ ] Featured product & image reordering endpoints
-- [ ] SiteSettings update endpoint
-- [ ] Admin test suite with mocked auth & storage
+- [x] Admin authentication (JWT access + refresh tokens, bcrypt hashing, rate limiting)
+- [x] Abstract `ImageStorage` interface + Cloudinary implementation (upload signature + media deletion)
+- [x] Product and Variant CRUD endpoints (with soft-delete, duplicate, bulk actions)
+- [x] Batch & inline stock update endpoints
+- [x] Featured product & image reordering endpoints
+- [x] SiteSettings update endpoint & Taxonomy manager (Categories & Brands CRUD)
+- [x] Catalog backup export and validated restore endpoints
+- [x] Admin test suite with mocked auth & storage (24/24 tests passing)
 
 ## Phase 3: Public Frontend
 - [ ] Design system tokens in Tailwind (deep charcoal base, off-white, royal gold accent)

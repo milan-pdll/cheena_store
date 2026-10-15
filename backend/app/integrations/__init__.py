@@ -7,6 +7,10 @@ from app.integrations.catalog_store import (
     LocalJsonCatalogStore,
     get_catalog_store,
 )
+from app.integrations.image_storage import (
+    CloudinaryImageStorage,
+    ImageStorage,
+)
 
 __all__ = [
     "CatalogStore",
@@ -14,4 +18,6 @@ __all__ = [
     "CloudinaryRawCatalogStore",
     "CachedCatalogStore",
     "get_catalog_store",
+    "ImageStorage",
+    "CloudinaryImageStorage",
 ]

@@ -3,6 +3,7 @@
 from typing import Any, Dict, List
 from app.core.exceptions import NotFoundException
 from app.repositories.product_repository import ProductRepository
+from app.schemas.admin import BulkStockItemUpdate
 from app.schemas.catalog import ProductVariant
 
 
@@ -27,6 +28,24 @@ class StockService:
         variant.stock_quantity = max(0, new_quantity)
         await self._repo.save_product(product)
         return variant
+
+    async def bulk_update_stock(
+        self, updates: List[BulkStockItemUpdate]
+    ) -> Dict[str, Any]:
+        """Perform batch update across multiple product SKU variants."""
+        updated_count = 0
+        all_products = {p.id: p for p in await self._repo.get_all(include_deleted=True)}
+
+        for item in updates:
+            if item.product_id in all_products:
+                prod = all_products[item.product_id]
+                variant = next((v for v in prod.variants if v.id == item.variant_id), None)
+                if variant:
+                    variant.stock_quantity = max(0, item.stock_quantity)
+                    updated_count += 1
+                    await self._repo.save_product(prod)
+
+        return {"updated_count": updated_count}
 
     async def get_low_stock_alerts(
         self, threshold: int = 3

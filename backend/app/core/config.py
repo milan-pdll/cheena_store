@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     # Single Admin Security & Auth
     ADMIN_EMAIL: str = "admin@footballstore.com"
     ADMIN_PASSWORD_HASH: str = (
-        "$2b$12$e6xU7O2B5O7Wl2rSvyFz4eKqvM1hF4yQ0N8sE4uP4nZ5h6g7j8k9l"
+        "$2b$12$PFAUJahiqmQxPr0R/LKB7eaZoud6.OMCdwcNj21KPgRTYwTyei2EW"
     )
     SECRET_KEY: str = "dev_secret_key_change_in_production_32chars_min"
     ALGORITHM: str = "HS256"
